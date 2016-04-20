@@ -1,0 +1,35 @@
+body {
+
+    margin-top: -25px;
+
+
+
+
+    /* Background image is centered vertically and horizontally at all times */
+
+background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url("/images/background2.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+  font-family: lato;
+  -webkit-filter: saturate(2);
+
+}
+
+
+@media (max-height: 500px) {
+  #chart_div{
+    height:300px;
+  }
+}
+@media (max-height: 750px) {
+  #chart_div{
+    height:500px;
+  }
+}
+@media (max-height: 1440px) {
+  #chart_div{
+    height:800px;
+  }
+}
