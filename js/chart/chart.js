@@ -59,13 +59,16 @@ function drawChart() {
         [ 'Parsley', 'Start Indoors', moment(date).subtract(10, 'weeks').toDate(), moment(date).subtract(9, 'weeks').toDate() ],
         [ 'Parsley', 'Plant Outdoors', moment(date).subtract(3, 'weeks').toDate(), moment(date).subtract(2, 'weeks').toDate() ],
 
+        [ 'Peas', 'Start Indoors', moment(date).subtract(6, 'weeks').toDate(), moment(date).subtract(4, 'weeks').toDate() ],
+        [ 'Peas', 'Direct Seed / Plant Outdoors', moment(date).subtract(4, 'weeks').toDate(), moment(date).subtract(2, 'weeks').toDate() ],
+
         [ 'Pepper', 'Start Indoors', moment(date).subtract(10, 'weeks').toDate(), moment(date).subtract(8, 'weeks').toDate() ],
         [ 'Pepper', 'Plant Outdoors', moment(date).add(1, 'weeks').toDate(), moment(date).add(2, 'weeks').toDate() ],
 
         [ 'Radish', 'Direct Seed / Plant Outdoors', moment(date).subtract(4, 'weeks').toDate(), moment(date).subtract(3, 'weeks').toDate() ],
 
         [ 'Spinach', 'Start Indoors', moment(date).subtract(6, 'weeks').toDate(), moment(date).subtract(4, 'weeks').toDate() ],
-        [ 'Spinach', 'Plant Outdoors', moment(date).subtract(4, 'weeks').toDate(), moment(date).subtract(3, 'weeks').toDate() ],
+        [ 'Spinach', 'Direct Seed / Plant Outdoors', moment(date).subtract(4, 'weeks').toDate(), moment(date).subtract(3, 'weeks').toDate() ],
 
         [ 'Swiss Chard', 'Start Indoors', moment(date).subtract(6, 'weeks').toDate(), moment(date).subtract(4, 'weeks').toDate() ],
         [ 'Swiss Chard', 'Plant Outdoors', moment(date).subtract(3, 'weeks').toDate(), moment(date).subtract(2, 'weeks').toDate() ],
@@ -73,19 +76,18 @@ function drawChart() {
         [ 'Tomato', 'Start Indoors', moment(date).subtract(8, 'weeks').toDate(), moment(date).subtract(6, 'weeks').toDate() ],
         [ 'Tomato', 'Plant Outdoors', moment(date).toDate(), moment(date).add(2, 'weeks').toDate() ],
 
+        [ 'Zucchini', 'Start Indoors', moment(date).subtract(4, 'weeks').toDate(), moment(date).subtract(3, 'weeks').toDate() ],
+        [ 'Zucchini', 'Direct Seed / Plant Outdoors', moment(date).add(1, 'weeks').toDate() , moment(date).add(3, 'weeks').toDate() ],
 
 
     ]);
 
     var options = {
-        
         timeline: {
             groupByRowLabel: true
         },
         colors: ['#81c784', 'lightblue', 'yellow'],
-        avoidOverlappingGridLines: false,
-        allowHtml:true,
-
+        avoidOverlappingGridLines: false
     };
 
     var chart = new google.visualization.Timeline(document.getElementById('chart_div'));

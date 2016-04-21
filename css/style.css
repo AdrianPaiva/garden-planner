@@ -3,17 +3,17 @@ body {
     margin-top: -25px;
 
 
-
-
-    /* Background image is centered vertically and horizontally at all times */
-
 background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url("/images/background2.jpg");
 background-position: center center;
 background-repeat: no-repeat;
-background-attachment: fixed;
+
 background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
   font-family: lato;
   -webkit-filter: saturate(2);
+  filter: saturate(2);
 
 }
 
@@ -22,14 +22,20 @@ background-size: cover;
   #chart_div{
     height:300px;
   }
+
 }
 @media (max-height: 750px) {
   #chart_div{
-    height:500px;
+    height:600px;
   }
 }
-@media (max-height: 1440px) {
+@media (max-height: 1000px) {
   #chart_div{
     height:800px;
+  }
+}
+@media (max-height: 1500px) {
+  #chart_div{
+    height:1000px;
   }
 }
